@@ -1,0 +1,156 @@
+/* CSS Document main styles */
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Slabo 27px', serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #2C3A47;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 5% 0 2.5% 23%;
+}
+
+hr {
+  overflow: visible;
+  padding: 0;
+  margin: 0 23% 2.25% 23%;
+  border: none;
+  border-top: medium double #333;
+  color: #2C3A47;
+  text-align: center;
+  transition-delay: 2s;
+}
+
+hr::after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+p {
+  color: #2C3A47;
+  font-size: 1rem;
+  margin: 0 23% 5% 23%;
+  text-align: justify;
+}
+
+svg {
+  margin-left: 50%;
+  cursor: pointer;
+}
+
+#Abschnitt2 { background: #fff; }
+#Abschnitt3 { background: #fff; }
+#Abschnitt4 { background: #fff; }
+#Abschnitt5 { background: #fff; }
+
+/* ################################## */
+/* #          NAVIGATION            # */
+/* ################################## */
+
+nav {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  z-index: 50;
+  margin: -100px 0 0 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+nav ul li {
+  font-size: 24px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #969696;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  color: #5c5c5c;
+}
+
+.menu_active {
+  opacity: 1;
+  color: #000;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+
+/* ################################## */
+/* #              GALLERY           # */
+/* ################################## */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.33333% - 7rem);
+  }
+}
+
+/* ################################## */
+/* #              FOOTER            # */
+/* ################################## */
+
+/*#Footer {
+  margin-top: 100%;
+}
+
+.Footer a {
+  margin: 0 23% 0 23%;
+  text-decoration: none;
+
+}
+
+.Footer p {
+  margin: 2% 23% 0 23%;
+}*/
