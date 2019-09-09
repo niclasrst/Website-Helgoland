@@ -60,8 +60,9 @@ $('img.zoomable').css({ cursor: 'pointer' }).live('click', function () {
   var img = $(this);
   var bigImg = $('<img />').css({
     'max-width': '100%',
-    'max-height': '100%',
-    'display': 'inline'
+    'max-height': '90%',
+    'display': 'inline',
+    'margin-top': '2.5%'
   });
 
   bigImg.attr({
