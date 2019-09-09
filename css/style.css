@@ -122,7 +122,11 @@ nav ul li a:hover {
 }
 
 .responsive-img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -130,10 +134,12 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    position: relative;
   }
 
   .cell {
     width: 50%;
+    margin: 4px;
   }
 }
 
