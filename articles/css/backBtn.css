@@ -1,0 +1,236 @@
+@charset "UTF-8";
+div.back {
+  position: fixed;
+  left: 3%;
+  bottom: 90%;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+  position: fixed;
+  display: inline-block;
+  transform: rotate(180deg) scale(2);
+}
+
+.arrow::before {
+  top: 3px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: 2px 2px 0 #493D3F, 3px 2px 0 #493D3F, 2px 3px 0 #493D3F, 3px 3px 0 #493D3F;
+  box-shadow: 2px 2px 0 #493D3F, 3px 2px 0 #493D3F, 2px 3px 0 #493D3F, 3px 3px 0 #493D3F;
+}
+
+.arrow::after {
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: 50%;
+  content: '•';
+  color: #493D3F;
+  line-height: 0;
+  font-size: 15px;
+  position: absolute;
+  -webkit-transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+  transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+}
+
+.arrow:hover, .arrow:focus {
+  outline: none;
+}
+
+.arrow:hover::after, .arrow:focus::after {
+  left: 2px;
+}
+
+.arrow.-red {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+  position: relative;
+  display: inline-block;
+}
+
+.arrow.-red::before {
+  top: 3px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: 2px 2px 0 #E67573, 3px 2px 0 #E67573, 2px 3px 0 #E67573, 3px 3px 0 #E67573;
+  box-shadow: 2px 2px 0 #E67573, 3px 2px 0 #E67573, 2px 3px 0 #E67573, 3px 3px 0 #E67573;
+}
+
+.arrow.-red::after {
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: 50%;
+  content: '•';
+  color: #E67573;
+  line-height: 0;
+  font-size: 14px;
+  position: absolute;
+  -webkit-transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+  transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+}
+
+.arrow.-red:hover, .arrow.-red:focus {
+  outline: none;
+}
+
+.arrow.-red:hover::after, .arrow.-red:focus::after {
+  left: 2px;
+}
+
+.arrow.-purple {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+  position: relative;
+  display: inline-block;
+}
+
+.arrow.-purple::before {
+  top: 3px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: 2px 2px 0 #8177D5, 3px 2px 0 #8177D5, 2px 3px 0 #8177D5, 3px 3px 0 #8177D5;
+  box-shadow: 2px 2px 0 #8177D5, 3px 2px 0 #8177D5, 2px 3px 0 #8177D5, 3px 3px 0 #8177D5;
+}
+
+.arrow.-purple::after {
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: 50%;
+  content: '•';
+  color: #8177D5;
+  line-height: 0;
+  font-size: 14px;
+  position: absolute;
+  -webkit-transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+  transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+}
+
+.arrow.-purple:hover, .arrow.-purple:focus {
+  outline: none;
+}
+
+.arrow.-purple:hover::after, .arrow.-purple:focus::after {
+  left: 2px;
+}
+
+.arrow.-dark {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+  position: relative;
+  display: inline-block;
+}
+
+.arrow.-dark::before {
+  top: 3px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: 2px 2px 0 #493D3F, 3px 2px 0 #493D3F, 2px 3px 0 #493D3F, 3px 3px 0 #493D3F;
+  box-shadow: 2px 2px 0 #493D3F, 3px 2px 0 #493D3F, 2px 3px 0 #493D3F, 3px 3px 0 #493D3F;
+}
+
+.arrow.-dark::after {
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: 50%;
+  content: '•';
+  color: #493D3F;
+  line-height: 0;
+  font-size: 14px;
+  position: absolute;
+  -webkit-transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+  transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+}
+
+.arrow.-dark:hover, .arrow.-dark:focus {
+  outline: none;
+}
+
+.arrow.-dark:hover::after, .arrow.-dark:focus::after {
+  left: 2px;
+}
+
+.arrow.-light {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+  position: relative;
+  display: inline-block;
+}
+
+.arrow.-light::before {
+  top: 3px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: 2px 2px 0 #e8eaf6, 3px 2px 0 #e8eaf6, 2px 3px 0 #e8eaf6, 3px 3px 0 #e8eaf6;
+  box-shadow: 2px 2px 0 #e8eaf6, 3px 2px 0 #e8eaf6, 2px 3px 0 #e8eaf6, 3px 3px 0 #e8eaf6;
+}
+
+.arrow.-light::after {
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: 50%;
+  content: '•';
+  color: #e8eaf6;
+  line-height: 0;
+  font-size: 14px;
+  position: absolute;
+  -webkit-transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+  transition: left .1s ease-out, bottom .1s ease-out, letter-spacing .1s ease-out;
+}
+
+.arrow.-light:hover, .arrow.-light:focus {
+  outline: none;
+}
+
+.arrow.-light:hover::after, .arrow.-light:focus::after {
+  left: 2px;
+}
+
+.arrow.-huge {
+  transform: scale(3);
+  -webkit-transform: scale(3);
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
