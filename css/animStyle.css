@@ -91,6 +91,12 @@ section.anim {
   transform: translateX(0);
 }
 
+
+
+/* ********************** */
+/* Styles for pins on map */
+/* ********************** */
+
 img.pin {
   position: absolute;
   width: 40px;

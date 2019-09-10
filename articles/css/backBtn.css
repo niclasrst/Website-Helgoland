@@ -3,6 +3,7 @@ div.back {
   position: fixed;
   left: 3%;
   bottom: 90%;
+  z-index: 999;
 }
 
 .arrow {

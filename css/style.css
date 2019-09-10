@@ -79,7 +79,7 @@ svg#indicatorNext {
 
 #Abschnitt4 {
   background: #fff;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
 }
 
 #Abschnitt5 {
