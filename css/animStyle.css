@@ -103,3 +103,14 @@ img.pin {
 img.pin:hover {
   transform: translateY(10%);
 }
+
+.next {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s ease-in-out;
+}
+
+.next.visible {
+  opacity: 1;
+  transform: rotateY(0);
+}

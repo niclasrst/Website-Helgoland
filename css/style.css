@@ -43,7 +43,7 @@ hr::after {
 
 p {
   color: #2C3A47;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: lighter;
   margin: 0 20% 5% 23%;
   text-align: justify;
@@ -51,20 +51,17 @@ p {
 
 svg {
   margin-left: 50%;
-  cursor: pointer;
+  cursor: s-resize;
 }
 
-#logo {
-  font-weight: lighter;
+svg#indicatorNext {
+  position: absolute;
+  top: 95%;
 }
 
-.headline {
-  font-weight: lighter;
-}
-
-.headline2 {
-  font-weight: lighter;
-}
+#logo { font-weight: lighter; }
+.headline { font-weight: lighter; }
+.headline2 { font-weight: lighter; }
 
 #Abschnitt1 {
   scroll-snap-align: start;

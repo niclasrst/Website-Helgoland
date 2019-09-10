@@ -4,6 +4,7 @@ const logo = document.querySelector('#logo');
 const headline = document.querySelector('.headline');
 const headline2 = document.querySelector('.headline2');
 const pins = document.querySelectorAll('.pin');
+const indicatorNext = document.querySelector('#indicatorNext');
 
 const tl = new TimelineMax();
 
@@ -14,7 +15,8 @@ tl.fromTo(map, 1, { height: '0%' }, { height: '100%', ease: Power2.easeInOut })
 .fromTo(logo, .5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
 .fromTo(headline, .5, { opacity: 0, x: -300 }, { opacity: 1, x: -350 })
 .fromTo(headline2, .5, { opacity: 0, x: -30 }, { opacity: 1, x: 0 }, '-=0.5')
-.fromTo(pins, 1.5, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut });
+.fromTo(pins, 1.5, { opacity: 0 }, { opacity: 1, ease: Power2.easeInOut })
+.fromTo(indicatorNext, 1, { opacity: 0, y: -15 }, { opacity: 1, y: 0, ease: Power2.easeInOut }, '-=1.5');
 
 // **************************
 // Fade in Headings animation
@@ -31,7 +33,8 @@ function isElementInViewport(element) {
   );
 }
 
-var elements = document.querySelectorAll(".module");
+var elements = document.querySelectorAll('.module');
+var indicators = document.querySelectorAll('.next');
 
 function callbackFunc() {
   for (var i = 0; i < elements.length; i++) {
@@ -39,6 +42,14 @@ function callbackFunc() {
       elements[i].classList.add("visible");
     } else {
       elements[i].classList.remove("visible");
+    }
+  }
+
+  for (var i = 0; i < indicators.length; i++) {
+    if (isElementInViewport(indicators[i])) {
+      indicators[i].classList.add("visible");
+    } else {
+      indicators[i].classList.remove("visible");
     }
   }
 }
