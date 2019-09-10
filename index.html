@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="description" content="Website über den Ausflug nach Helgoland">
     <meta name="keywords" content="HTML, CSS, JavaScript, jQuery">
@@ -9,55 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Helgoland</title>
-</head>
+  </head>
 
-<!-- Libraries -->
-<script type="text/javascript" src="https://static.tumblr.com/xz44nnc/o5lkyivqw/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+  <!-- Libraries -->
+  <script type="text/javascript" src="https://static.tumblr.com/xz44nnc/o5lkyivqw/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
 
-<!-- JS -->
-<script type="text/javascript" src="js/scrolling.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="js/scrolling.js"></script>
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/animStyle.css">
-<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css">
 
-<body>
+  <body>
     <!-- NAVIGATION -->
     <nav>
-        <ul>
-            <!-- ELEMENTS -->
-            <li><a href="#Abschnitt1">&bull;</a></li>
-            <li><a href="#Abschnitt2">&bull;</a></li>
-            <li><a href="#Abschnitt3">&bull;</a></li>
-            <li><a href="#Abschnitt4">&bull;</a></li>
-            <!--<li><a href="#Abschnitt5">&bull;</a></li>-->
-        </ul>
+      <ul>
+          <!-- ELEMENTS -->
+          <li><a href="#Abschnitt1">&bull;</a></li>
+          <li><a href="#Abschnitt2">&bull;</a></li>
+          <li><a href="#Abschnitt3">&bull;</a></li>
+          <li><a href="#Abschnitt4">&bull;</a></li>
+          <!--<li><a href="#Abschnitt5">&bull;</a></li>-->
+      </ul>
     </nav>
     <!-- HOME -->
     <header id="Abschnitt1" class="scroll">
-        <!-- Small heading on top left corner -->
-        <div class="anim">
-            <h3 id="logo">AG f&uuml;r Journalistisches Schreiben</h3>
+      <!-- Small heading on top left corner -->
+      <div class="anim">
+        <h3 id="logo">AG f&uuml;r Journalistisches Schreiben</h3>
+      </div>
+
+      <section class="anim">
+        <div class="map">
+          <!-- Pins -->
+          <dfn id="one" data-info="Das ist der Pin der Schule hier findest du informationen über die Schule auf Helgoland"><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
+          <dfn id="two" data-info="Das ist der Pin der Inselführung hier kommst du zu einer Reportage die die Geschichte der Insel erzählt."><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
+          <dfn id="three" data-info="Das ist der Pin der Dünenführung hier kommst du zu einer Reportage die die Geschichte der Düneninsel und ihrer teils bedrohten Bewohnern erzählt."><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
+
+          <!-- PICTURE -->
+          <img src="data/map1.png" alt="Map Helgoland">
+
+          <!-- Picture Tags -->
+          <h1 class="headline">HELGOLAND</h1>
+          <h1 class="headline2">D&Uuml;NE</h1>
         </div>
-
-        <section class="anim">
-            <div class="map">
-                <!-- Pins -->
-                <dfn id="one" data-info="Das ist der Pin der Schule hier findest du informationen über die Schule auf Helgoland"><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
-                <dfn id="two" data-info="Das ist der Pin der Inselführung hier kommst du zu einer Reportage die die Geschichte der Insel erzählt."><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
-                <dfn id="three" data-info="Das ist der Pin der Dünenführung hier kommst du zu einer Reportage die die Geschichte der Düneninsel und ihrer teils bedrohten Bewohnern erzählt."><img src="data/icon.png" class="pin" alt="Icon Pin" onclick="window.location = 'article.html';"></dfn>
-
-                <!-- PICTURE -->
-                <img src="data/map1.png" alt="Map Helgoland">
-
-                <!-- Picture Tags -->
-                <h1 class="headline">HELGOLAND</h1>
-                <h1 class="headline2">D&Uuml;NE</h1>
-            </div>
-        </section>
+      </section>
     </header>
 
     <!-- Sliding Background -->
@@ -68,119 +67,118 @@
 
     <!-- ABOUT HELGOLAND -->
     <section id="Abschnitt2" class="scroll">
-        <!-- HEADING -->
-        <h1 class="module">&Uuml;BER HELGOLAND</h1>
-        <hr>
+      <!-- HEADING -->
+      <h1 class="module">&Uuml;BER HELGOLAND</h1>
+      <hr>
 
-        <!-- TEXT -->
-        <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            <br><br> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-            duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            <br><br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-            eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            <br><br> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-        </p>
+      <!-- TEXT -->
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        <br><br> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+        duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        <br><br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        <br><br> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      </p>
 
-        <!-- NEXT ICON -->
-        <a href="#Abschnitt3"><svg class="next" width="27" height="27" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg"><path d="M1523 992q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23zm0-384q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></a>
+      <!-- NEXT ICON -->
+      <a href="#Abschnitt3"><svg class="next" width="27" height="27" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg"><path d="M1523 992q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23zm0-384q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></a>
     </section>
 
     <!-- ABOUT US -->
     <section id="Abschnitt3" class="scroll">
-        <!-- HEADING -->
-        <h1 class="module">&Uuml;BER UNS</h1>
-        <hr>
+      <!-- HEADING -->
+      <h1 class="module">&Uuml;BER UNS</h1>
+      <hr>
 
-        <!-- TEXT -->
-        <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            <br><br> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-            duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            <br><br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-            eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            <br><br> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-        </p>
+      <!-- TEXT -->
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        <br><br> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+        duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        <br><br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        <br><br> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      </p>
 
-        <!-- NEXT ICON -->
-        <a href="#Abschnitt4"><svg class="next" width="27" height="27" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg"><path d="M1523 992q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23zm0-384q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></a>
+      <!-- NEXT ICON -->
+      <a href="#Abschnitt4"><svg class="next" width="27" height="27" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg"><path d="M1523 992q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23zm0-384q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></a>
     </section>
 
     <!-- GALERIE -->
     <section id="Abschnitt4" class="scroll">
-        <h1 class="module">GALERIE</h1>
-        <hr>
+      <h1 class="module">GALERIE</h1>
+      <hr>
 
-        <!-- CONTAINER -->
-        <div class="container">
-            <!-- GRID -->
-            <div class="grid">
-                <!-- SINGLE CELL -->
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+      <!-- CONTAINER -->
+      <div class="container">
+        <!-- GRID -->
+        <div class="grid">
+          <!-- SINGLE CELL -->
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="data/thumbnail.jpg" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="data/thumbnail.jpg" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
 
-                <div class="cell">
-                    <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
-                </div>
-            </div>
+          <div class="cell">
+            <img src="http://placehold.it/800x800" class="responsive-img zoomable" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!--<section id="Footer">
-        <div class="Footer">
-            <hr>
+      <div class="Footer">
+        <hr>
 
-            <div class="links">
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
-            <a href="#">Haftungsausschluss</a>
-            </div>
-
-            <p>&copy; AG Journalistisches Schreiben</p>
+        <div class="links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">Haftungsausschluss</a>
         </div>
-        </section>-->
+
+        <p>&copy; AG Journalistisches Schreiben</p>
+      </div>
+    </section>-->
 
     <!-- JS -->
     <script type="text/javascript" src="js/animations.js"></script>
-</body>
-
+  </body>
 </html>

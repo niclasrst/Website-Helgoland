@@ -1,68 +1,67 @@
 dfn {
-    font-style: normal;
-    position: absolute;
+  font-style: normal;
+  position: absolute;
 }
 
 dfn#one {
-    left: 35%;
-    top: 40%;
+  left: 35%;
+  top: 40%;
 }
 
 dfn#two {
-    left: 35%;
-    top: 30%;
+  left: 35%;
+  top: 30%;
 }
 
 dfn#three {
-    left: 65%;
-    top: 30%;
+  left: 65%;
+  top: 30%;
 }
 
 dfn::after {
-    content: attr(data-info);
-    display: inline;
-    position: absolute;
-    top: 22px;
-    left: 0;
-    opacity: 0;
-    width: 200px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.5em;
-    padding: 0.5em 0.8em;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    color: #fff;
-    pointer-events: none;
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  opacity: 0;
+  width: 200px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: #fff;
+  pointer-events: none;
 }
 
 dfn::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 15px;
-    opacity: 0;
-    width: 0;
-    height: 0;
-    border: solid transparent 5px;
-    border-bottom-color: rgba(0, 0, 0, 0.8);
-    transition: opacity 250ms, top 250ms;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 250ms, top 250ms;
 }
 
 dfn:hover {
-    z-index: 10;
+  z-index: 10;
 }
 
-dfn:hover::after,
-dfn:hover::before {
-    opacity: 1;
+dfn:hover::after, dfn:hover::before {
+  opacity: 1;
 }
 
 dfn:hover::after {
-    top: 40px;
+  top: 40px;
 }
 
 dfn:hover::before {
-    top: 30px;
+  top: 30px;
 }
