@@ -82,9 +82,6 @@ svg#indicatorNext {
   scroll-snap-align: end;
 }
 
-#Abschnitt5 {
-  background: #fff;
-}
 
 
 /* ################################## */
@@ -115,11 +112,6 @@ nav ul li a {
   opacity: 0.7;
   text-decoration: none;
   transition: all .5s ease;
-}
-
-nav ul li a:hover {
-  opacity: 1;
-  color: #5c5c5c;
 }
 
 .menu_active {
